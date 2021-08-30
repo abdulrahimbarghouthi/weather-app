@@ -1,4 +1,5 @@
 # Weather App
+## this app is just a practical experiment to apply modern android development.
 
 - Single activity
 - MVVM desgin pattern
@@ -9,7 +10,7 @@
 - Retrofit.
 - Coil image library.
 
-click on the below picture to go to the video:
+click screenshot to display video:
 [![Youtube Video](https://i.suar.me/1Zvjd/m)](https://youtu.be/AeaI0uj-Kvc)
 
 

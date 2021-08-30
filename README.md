@@ -1,4 +1,6 @@
 # Weather App
+
+- Single activity
 - MVVM desgin pattern
 - Data Binding.
 - Lifecycle Awareness.

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/app_nav"
+    app:startDestination="@id/homeFragment">
+
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.barghouthi.myapp.ui.fragments.HomeFragment"
+        android:label="Countries" >
+        <action
+            android:id="@+id/action_homeFragment_to_detailsFragment"
+            app:destination="@id/detailsFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_searchFragment"
+            app:destination="@id/searchFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/detailsFragment"
+        android:name="com.barghouthi.myapp.ui.fragments.DetailsFragment"
+        android:label=" "
+        tools:layout="@layout/fragment_details" >
+        <argument
+            android:name="selectedCountry"
+            app:argType="com.barghouthi.myapp.data.models.Country"
+            android:defaultValue="@null" />
+        <action
+            android:id="@+id/action_detailsFragment_to_homeFragment"
+            app:destination="@id/homeFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/searchFragment"
+        android:name="com.barghouthi.myapp.ui.fragments.SearchFragment"
+        android:label=" "
+        tools:layout="@layout/fragment_search">
+
+        <argument
+            android:name="countries"
+            app:argType="com.barghouthi.myapp.data.models.Country[]"
+            android:defaultValue="@null"/>
+
+        <action
+            android:id="@+id/action_searchFragment_to_detailsFragment"
+            app:destination="@id/detailsFragment" />
+        <action
+            android:id="@+id/action_searchFragment_to_homeFragment"
+            app:destination="@id/homeFragment" />
+    </fragment>
+</navigation>

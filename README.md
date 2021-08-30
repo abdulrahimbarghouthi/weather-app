@@ -1,14 +1,14 @@
 # Weather App
-## this app is just a practical experiment to apply modern android development
+## this app is just a practical experiment to apply modern android development.
 
-- Single activity
-- MVVM desgin pattern
+- Single Activity.
+- MVVM Desgin Pattern.
 - Data Binding.
 - Lifecycle Awareness.
 - Kotlin Coroutines.
 - Navigation Component.
 - Retrofit.
-- Coil image library.
+- Coil Image Library.
 
 **click screenshot to display video**
 
